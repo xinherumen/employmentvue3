@@ -1,11 +1,11 @@
-import axios from "axios"
-import path from "./path"
+import axios from 'axios'
+import path from './path'
 import base from './path'
 
 const api = {
-  getchenpin(){
+  getchenpin () {
     return axios.get(path.baseUrl + path.chengpin)
   }
 }
 
-export default  api
+export default api

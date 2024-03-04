@@ -1,21 +1,21 @@
 <template>
   <div>
-
+    你好世界
   </div>
 </template>
 
 <script >
 
-  import axios from 'axios'
+import axios from 'axios'
 
-  export default {
+export default {
   mounted () {
     axios({
-      method:"get",
-      url:"api/blueberrypai/getChengpinDetails.php"
-    }).then(res=>{
-      console.log(res.data);
+      method: 'get',
+      url: 'api/blueberrypai/getChengpinDetails.php'
+    }).then(res => {
+      console.log(res.data)
     })
   }
-  }
+}
 </script>

@@ -2,12 +2,12 @@ const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
   lintOnSave: false,
-  devServer:{
-    proxy:{
-      '/api' : {
-        //换为要跨域的网址
+  devServer: {
+    proxy: {
+      '/api': {
+        // 换为要跨域的网址
         target: 'http://iwenwiki.com/',
-        changeOrigin : true
+        changeOrigin: true
       }
     }
   }

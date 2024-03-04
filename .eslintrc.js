@@ -11,7 +11,7 @@ module.exports = {
   ],
 
   parserOptions: {
-    parser: '@babel/eslint-parser'
+    parser: '@typescript-eslint/parser'
   },
 
   rules: {
@@ -19,8 +19,9 @@ module.exports = {
     'no-debugger': 'off'
   },
 
-  'extends': [
+  extends: [
     'plugin:vue/vue3-essential',
-    '@vue/standard'
+    '@vue/standard',
+    '@vue/typescript'
   ]
 }
